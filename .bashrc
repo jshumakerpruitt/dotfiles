@@ -225,3 +225,4 @@ fi
 
 ## Define any user-specific variables you want here.
 source ~/.bashrc_custom
+alias sudo="sudo "
