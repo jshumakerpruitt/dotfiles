@@ -23,6 +23,10 @@
 (require 'package)
 (add-to-list 'package-archives
   '("melpa" . "http://melpa.milkbox.net/packages/") t)
+(add-to-list 'load-path
+              "~/.emacs.d/plugins/yasnippet")
+(require 'yasnippet)
+(yas-global-mode 1)
 ;;end changed 
 (put 'downcase-region 'disabled nil)
 (put 'upcase-region 'disabled nil)
