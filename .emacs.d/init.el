@@ -23,10 +23,15 @@
 (require 'package)
 (add-to-list 'package-archives
   '("melpa" . "http://melpa.milkbox.net/packages/") t)
+(add-to-list 'package-archives 
+    '("marmalade" .
+      "http://marmalade-repo.org/packages/"))
+(package-initialize)
 (add-to-list 'load-path
               "~/.emacs.d/plugins/yasnippet")
 (require 'yasnippet)
 (yas-global-mode 1)
+(load-file "~/dotfiles/.emacs.d/elpa/geiser-20130930.515/geiser.el")
 ;;end changed 
 (put 'downcase-region 'disabled nil)
 (put 'upcase-region 'disabled nil)
