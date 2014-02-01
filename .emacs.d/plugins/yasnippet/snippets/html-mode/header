@@ -1,0 +1,7 @@
+# contributor: jasper
+# name: <header>...</header>
+# key: header
+# --
+<header>
+$1
+</header>

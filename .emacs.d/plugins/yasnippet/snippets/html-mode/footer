@@ -1,0 +1,7 @@
+# contributor: jasper
+# name: <footer>...</footer>
+# key: footer
+# --
+<footer>
+$1
+</footer>
