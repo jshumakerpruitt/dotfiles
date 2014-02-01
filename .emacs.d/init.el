@@ -32,6 +32,17 @@
 (require 'yasnippet)
 (yas-global-mode 1)
 (load-file "~/dotfiles/.emacs.d/elpa/geiser-20130930.515/geiser.el")
+;;octave
+   (autoload 'octave-mode "octave-mod" nil t)
+          (setq auto-mode-alist
+                (cons '("\\.m$" . octave-mode) auto-mode-alist))
+(add-hook 'octave-mode-hook
+                    (lambda ()
+                      (abbrev-mode 1)
+                      (auto-fill-mode 1)
+                      (if (eq window-system 'x)
+                          (font-lock-mode 1))))
+
 ;;end changed 
 (put 'downcase-region 'disabled nil)
 (put 'upcase-region 'disabled nil)
