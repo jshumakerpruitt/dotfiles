@@ -2,6 +2,6 @@
 # name: <html>...</html>
 # key: html
 # --
-<html>
+<html lang="en">
   $0
 </html>

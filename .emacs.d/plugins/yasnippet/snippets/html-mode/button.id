@@ -1,0 +1,5 @@
+# contributor: Jimmy Wu <frozenthrone88@gmail.com>
+# name: <button id="...">...</div>
+# key: button
+# --
+<button id="$1">$2</button>$0

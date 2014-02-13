@@ -1,0 +1,7 @@
+# contributor: jasper
+# name: #id { rules }
+# key: #
+# --
+#${id} {
+$0
+}
