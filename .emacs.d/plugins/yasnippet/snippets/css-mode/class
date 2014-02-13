@@ -1,0 +1,7 @@
+# contributor: jasper
+# name: .class { rules }
+# key: .
+# --
+.${class} {
+$0
+}

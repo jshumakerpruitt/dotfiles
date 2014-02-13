@@ -1,0 +1,7 @@
+# contributor: jasper
+# name: selector { rules }
+# key: s
+# --
+${selector} {
+$0
+}
