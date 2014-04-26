@@ -3,5 +3,5 @@
 # key: divid
 # --
 <div id="$1">
-  $0
+  $2
 </div>

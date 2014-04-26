@@ -64,12 +64,13 @@ export PATH=/usr/local/bin:$PATH
 export PATH=/usr/local/sbin:$PATH
 export PATH=/usr/local/heroku/bin:$PATH # Heroku: https://toolbelt.heroku.com/standalone
 #added by jasper
-#source ~/.rvm/scripts/rvm
-
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
 
 #add sedgwick's algs4 libs to path
 test -r ~/algs4/bin/config.sh && source ~/algs4/bin/config.sh
 #add boris (php repl)
 export PATH=/usr/local/bin/boris/bin:$PATH
 #end added by jasper
+
+#source ~/.rvm/scripts/rvm
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function

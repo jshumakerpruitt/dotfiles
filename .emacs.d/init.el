@@ -19,6 +19,14 @@
 (ido-mode t)
 (menu-bar-mode -1)
 ;;changed by jasper
+(add-to-list 'load-path "~/.emacs.d/")
+(require 'auto-complete-config)
+(add-to-list 'ac-dictionary-directories "~/.emacs.d//ac-dict")
+(ac-config-default)
+;;don't offer auto complete suggestions until 2 letters typed
+(setq ac-auto-start 2)
+(setq ac-ignore-case nil)
+
 (normal-erase-is-backspace-mode 0)
 (require 'package)
 (add-to-list 'package-archives
