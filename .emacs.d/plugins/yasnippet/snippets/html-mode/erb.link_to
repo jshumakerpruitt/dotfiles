@@ -1,0 +1,5 @@
+# contributor: J4sper
+# name: <%= link_to "... " />
+# key: elink
+# --
+<%= link_to "$1", "$2", class: "$3" %>

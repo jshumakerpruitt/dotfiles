@@ -1,0 +1,64 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/home/jasper/development/appacademy/" . "test-first-ruby/")
+ ("/home/jasper/dotfiles/" . ".emacs.d/")
+ ("/home/jasper/" . "dotfiles/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/home/jasper/development/algs/"
+ "/home/jasper/development/appacademy/event_manager/"
+ "/home/jasper/development/appacademy/event_manager/lib/"
+ "/home/jasper/development/appacademy/test-first-ruby/spec/"
+ "/home/jasper/development/appacademy/test-first-ruby/lib/"
+ "/home/jasper/dotfiles/.emacs.d/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "dfs.rb"
+ "form_letter.erb"
+ "form_letter.html"
+ "event_manager.rb"
+ "09_timer_spec.rb"
+ "06_performance_monitor_spec.rb"
+ "06_performance_monitor.rb"
+ "13_xml_document_spec.rb"
+ "12_rpn_calculator_spec.rb"
+ "10_temperature_object_spec.rb"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/home/jasper/foo/sample_app/spec/controllers/" (21637 13425 48156 427000) "relationships_controller_spec.rb~" "./" "#relationships_controller_spec.rb#" "relationships_controller_spec.rb" ".#relationships_controller_spec.rb" "../")
+
+ ("/home/jasper/development/appacademy/a00/lib/" (21618 37908 698959 753000) "../" "00_digital_root.rb~" "03_fibonacci.rb" "02_common_substrings.rb" "./" "00_digital_root.rb" "03_fibonacci.rb~" "01_caesar_cipher.rb" "01_caesar_cipher.rb~" "02_common_substrings.rb~")
+
+ ("/home/jasper/development/algs/" (21617 19668 914645 139000) "kmp.rb" "../" "QuickUnionUF.rb" "HeapPQ.rb~" ".gitignore" "BST.rb" "WeightedQuickUnionUF.rb" "Fast.java~" "input20.txt" "RandomizedQueue.java~" "LinkedList.rb~" "Percolation.rb" "bubblesort.rb~" "graph.rb~" "linked_list.rb~" "PercolationStats.rb" "queues.zip" "Deque.java.bak" "Subset.java~" "bubblesort.rb" "mergesort.rb" "graph.rb" "BruteForce.java~" "Heap.rb~" "dfs.rb~" "kmp.rb~" "./" "collinear.zip" "linked_list.rb" "QuickFindUF.rb" "collinear/" "mergesort.rb~" "LinkedList.js" "Deque.java~" ".#graph.rb" "WeightedQuickUnionPCUF.rb" "Point.java~" "LinkedList.rb" ".git/" "#graph.rb#" "java/" "dfs.rb" "BST.rb~" "HeapPQ.rb")
+
+ ("/home/jasper/dotfiles/.emacs.d/" (21616 62323 335587 155000) "./" "ac-dict/" "ac-comphist.dat" "popup.elc" "ido.last" "init.el" "auto-save-list/" "auto-complete-1.3.1/" "evil/" "auto-complete.elc" "ido.last~" "auto-complete-config.elc" "lisp/" "plugins/" "fuzzy.elc" "jade-mode/" "../" "url/" "elpa/" "node_emacs")
+
+ ("/home/jasper/development/appacademy/test-first-ruby/lib/" (21610 54968 897893 35000) "../" "14_array_extensions.rb" "01_temperature.rb" "08_book_titles.rb" "10_temperature_object.rb" "11_dictionary.rb" "13_xml_document.rb" "03_simon_says.rb" "07_hello_friend.rb" "06_performance_monitor.rb" "04_pig_latin.rb" "15_in_words.rb" "05_silly_blocks.rb" "./" "09_timer.rb" "02_calculator.rb" "00_hello.rb" "12_rpn_calculator.rb")
+
+ ("/home/jasper/development/appacademy/event_manager/lib/" (21610 59225 301983 510000) "../" "event_manager.rb" "event_manager.rb~" "./")
+
+ ("/home/jasper/development/appacademy/event_manager/" (21610 54296 405878 741000) "../" "form_letter.erb" "form_letter.html" "event_attendees.csv" "./" "lib/" "output/")
+
+ ("/home/jasper/development/appacademy/test-first-ruby/spec/" (21609 33052 980249 634000) "../" "10_temperature_object_spec.rb" "08_book_titles_spec.rb" "03_simon_says_spec.rb" "13_xml_document_spec.rb" "02_calculator_spec.rb" "01_temperature_spec.rb" "04_pig_latin_spec.rb" "15_in_words_spec.rb" "09_timer_spec.rb" "05_silly_blocks_spec.rb" "./" "06_performance_monitor_spec.rb" "00_hello_spec.rb" "12_rpn_calculator_spec.rb" "07_hello_friend_spec.rb" "14_array_extensions_spec.rb" "11_dictionary_spec.rb")
+
+ ("/home/jasper/dotfiles/" (21535 31439 960427 262000) "./" "#.bashrc#" ".git/" ".screenrc" "README.md" ".gitignore" ".bashrc_custom" ".bashrc" ".bash_profile" "xcape/" "../" ".emacs.d/")
+
+ ("/home/jasper/" (21607 33935 261130 437000) ".Space2Ctrl.log" ".xsession-errors.old" ".pry_history" ".dbus/" ".ssh/" "./" ".zlogin" ".rvm/" "dzen/" ".netrc" ".mysql_history" "lectures/" ".mozilla/" ".dmrc" "mp4.list" "ohmyemacs/" ".adobe/" ".gnome/" "links/" ".gconf/" ".bash_eternal_history" ".compiz/" ".bash_history" ".config/" ".ghc/" "Dropbox/" "development/" "examples.desktop" "Documents/" "foo.txt" ".bashrc_custom" "Desktop/" "jack/" ".dropbox/" ".profile" "Public/" ".pki/" ".bashrc" ".Skype/" "Videos/" ".gtypist-bestlog" "ome/" "Pictures/" "#mredauto#1#" "Downloads/" ".thumbnails/" ".racket/" "ispal.rb~" ".dropbox-dist/" "files/" ".psql_history" ".pip/" "nss3/" ".bash_logout" "foo/" ".gnupg/" ".ICEauthority" ".macromedia/" ".bash_profile" ".profile~" "bin/" "bookmarks-2014-09-21_642.json" "##foo.sml##" "foo.txt~" ".lesshst" "Templates/" "dotfiles/" ".cabal/" "Music/" ".cache/" "node-v0.10.32/" ".xsession-errors" ".gitconfig" ".Xauthority" "music.list" "../" ".emacs.d/" ".irb-history" ".local/" ".mysql/" "typing/" "#inet#" ".netrc~" "sha.result~" ".wireshark/" ".gem/")
+
+ ("/home/jasper/development/" (21589 24902 147705 565000) "html5/" "../" "scratch/" "mandelbrot/" "codeschooljs/" "work/" "home-20140816.tgz" "euler/" "python/" "saasclass/" "data_structures/" "rails/" "adt-bundle-linux-x86_64-20131030/" "appacademy/" "eclipse_workspace/" "programming_clojure/" "sml/" "sql/" "nodejs/" "./" "collinear.zip" "rust/" "koans/" "githubio/" "ruby/" "awshost/" "algs/" "haskell/" "interview/" "c-programming-language/" "javascript/" "rlang/" "racket/" "home-20140814.tgz" "bash/")
+
+ ("/home/jasper/development/appacademy/" (21581 26275 642477 684000) "is_prime.rb" "../" "lines.rb~" "test-first-ruby/" "lines.rb" "second/" "bubble.rb" "./" "primes.rb" "prep-work/")
+
+ ("/home/jasper/development/appacademy/test-first-ruby/" (21581 26354 110479 719000) "../" ".rspec" "./" "README.md" "Gemfile.lock" "Gemfile" "spec/" ".git/" "lib/")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

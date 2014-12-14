@@ -1,2 +1,4 @@
 
 alias books="cd ~/Desktop/programmingBooks"
+alias tether="sudo ~/tether/Tether/linux/run.sh"
+

@@ -4,7 +4,7 @@
 ;; ---------------------
 ;; -- Global Settings --
 ;; ---------------------
-(add-to-list 'load-path "~/.emacs.d")
+(add-to-list 'load-path "~/.emacs.d/lisp")
 (require 'cl)
 (require 'ido)
 (require 'ffap)
@@ -19,13 +19,24 @@
 (ido-mode t)
 (menu-bar-mode -1)
 ;;changed by jasper
-(add-to-list 'load-path "~/.emacs.d/")
+
 (require 'auto-complete-config)
 (add-to-list 'ac-dictionary-directories "~/.emacs.d//ac-dict")
 (ac-config-default)
 ;;don't offer auto complete suggestions until 2 letters typed
 (setq ac-auto-start 2)
 (setq ac-ignore-case nil)
+
+;;evil-mode
+(add-to-list 'load-path "~/.emacs.d/evil")
+(require 'evil)
+(evil-mode 1)
+
+;;key-chord for evil
+(require 'key-chord)
+(setq key-chord-two-keys-delay 0.5)
+(key-chord-define evil-insert-state-map "jj" 'evil-normal-state)
+(key-chord-mode 1)
 
 (normal-erase-is-backspace-mode 0)
 (require 'package)
@@ -51,6 +62,9 @@
                       (if (eq window-system 'x)
                           (font-lock-mode 1))))
 
+;;elpy
+(package-initialize)
+(elpy-enable)
 ;;end changed 
 (put 'downcase-region 'disabled nil)
 (put 'upcase-region 'disabled nil)
@@ -109,3 +123,37 @@
 (require 'jade-mode)    
 (add-to-list 'auto-mode-alist '("\\.styl$" . sws-mode))
 (add-to-list 'auto-mode-alist '("\\.jade$" . jade-mode))
+
+
+
+;; -------------------------------------
+;; -- Oh My Emacs (Ruby) added by jasper
+;; --------------------------------------
+(defun ome-ruby-mode-setup ()
+  ;; Ah, this huge auto-mode-alist list comes from emacs prelude
+  (add-to-list 'auto-mode-alist '("\\.rake\\'" . ruby-mode))
+  (add-to-list 'auto-mode-alist '("Rakefile\\'" . ruby-mode))
+  (add-to-list 'auto-mode-alist '("\\.gemspec\\'" . ruby-mode))
+  (add-to-list 'auto-mode-alist '("\\.ru\\'" . ruby-mode))
+  (add-to-list 'auto-mode-alist '("Gemfile\\'" . ruby-mode))
+  (add-to-list 'auto-mode-alist '("Guardfile\\'" . ruby-mode))
+  (add-to-list 'auto-mode-alist '("Capfile\\'" . ruby-mode))
+  (add-to-list 'auto-mode-alist '("\\.thor\\'" . ruby-mode))
+  (add-to-list 'auto-mode-alist '("Thorfile\\'" . ruby-mode))
+  (add-to-list 'auto-mode-alist '("Vagrantfile\\'" . ruby-mode))
+  (add-to-list 'auto-mode-alist '("\\.jbuilder\\'" . ruby-mode)))
+
+(ome-ruby-mode-setup)
+
+
+(defun ome-inf-ruby-setup ()
+  (require 'inf-ruby)
+  (define-key inf-ruby-minor-mode-map (kbd "C-c C-z") 'run-ruby)
+  (when (executable-find "pry")
+    (add-to-list 'inf-ruby-implementations '("pry" . "pry"))
+    (setq inf-ruby-default-implementation "pry")))
+
+;;(ome-install 'inf-ruby)
+
+(when (require 'smartparens nil 'noerror)
+  (require 'smartparens-ruby))
