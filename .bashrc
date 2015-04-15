@@ -192,8 +192,8 @@ alias serve="python -m SimpleHTTPServer"
 # 2.3) Text and editor commands
 alias em='emacs -nw'     # No X11 windows
 alias eqq='emacs -nw -Q' # No config and no X11
-export EDITOR='emacs -nw'
-export VISUAL='emacs -nw' 
+export EDITOR='vim'
+export VISUAL='vim' 
 
 # 2.4) grep options
 export GREP_OPTIONS='--color=auto'
@@ -227,6 +227,12 @@ fi
 ## Define any user-specific variables you want here.
 source ~/.bashrc_custom
 alias sudo="sudo "
+alias gam="git commit -am"
+alias gad="git add -A"
+
+export GOROOT=/usr/local/go
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
