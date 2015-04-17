@@ -229,6 +229,7 @@ source ~/.bashrc_custom
 alias sudo="sudo "
 alias gam="git commit -am"
 alias gad="git add -A"
+alias vi="vim"
 
 export GOROOT=/usr/local/go
 export GOPATH=$HOME/go
